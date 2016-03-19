@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ************************* COPY FROM HERE ************************* -->
+    <!-- Change this title to whatever your page is -->
+    <title>EnvPortal - Confirm Email</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+    <!-- ************************* TO HERE ************************* -->
+  </head>
+  <body>
+    <!-- ************************* COPY FROM HERE ************************* -->
+    <!-- This is the navigation bar. This should be on every page -->
+    <!-- If you change anything here BE SURE to copy it over to EVERY other page -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">EnvPortal</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="find_events.html">Find an Event <span class="sr-only">(current)</span></a></li>
+            <li><a href="find_resources.html">Find Resources</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="log_in.html">Log In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumbs: add your page to this list -->
+    <ul class="breadcrumb">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="sign_up.html">Sign Up</a></li>
+      <li class="active">Email Confirmation</li>
+    </ul>
+    <!-- End Breadcrumbs -->
+    <!-- ************************* TO HERE ************************* -->
+
+    <div class="container-fluid">
+      <h3>Thank you for signing up for EnvPortal!</h3>
+
+      <p>The last step to creating an account is confirming your email address.</p>
+
+      <p>Please enter the code found in your email to log in.</p>
+      <div class="form-group col-lg-4">
+        <label class="control-label" for="validationCode">Validation Code</label>
+        <input class="form-control" id="validationCode" type="text" value="Enter the Validation Code">
+      </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-3">
+          <a href="user_dashboard.html" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
