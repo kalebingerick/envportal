@@ -4968,6 +4968,8 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-image: url("../img/featured_event.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .jumbotron h1,
 .jumbotron .h1 {
