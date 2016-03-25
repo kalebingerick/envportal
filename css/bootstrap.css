@@ -5007,51 +5007,6 @@ a.badge:focus {
     font-size: 68px;
   }
 }
-.event {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #f5f5f5;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.event h1,
-.event .h1 {
-  color: inherit;
-}
-.event p {
-  margin-bottom: 15px;
-  font-size: 23px;
-  font-weight: 200;
-}
-.event > hr {
-  border-top-color: #d5d5d5;
-}
-.container .event,
-.container-fluid .event {
-  border-radius: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.event .container {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .event {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .container .event,
-  .container-fluid .event {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  .event h1,
-  .event .h1 {
-    font-size: 68px;
-  }
-}
 .thumbnail {
   display: block;
   padding: 4px;
