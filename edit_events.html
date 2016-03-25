@@ -3,7 +3,7 @@
   <head>
     <!-- ************************* COPY FROM HERE ************************* -->
     <!-- Change this title to whatever your page is -->
-    <title>EnvPortal - Find Events</title>
+    <title>EnvPortal - Edit Event - Come plant trees with RIT </title>
     <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
     <!-- ************************* TO HERE ************************* -->
   </head>
@@ -39,25 +39,50 @@
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
       <li><a href="home.html">Home</a></li>
-      <li class="active">Events</li>
+	  <li><a href="find_events.html">Events</a></li>
+      <li class="active">Edit Event</li>
     </ul>
     <!-- End Breadcrumbs -->
     <!-- ************************* TO HERE ************************* -->
-	<div class="container-fluid">
-		<div class="event">
-		<h2>Come plant trees with RIT</h2>
-        <div class="row">
-          <div class="col-md-4">
-			<h3>About:<p>Come plant trees with RIT!</p></h3>            
-			<h3>When: <p>Wednesday, March 30th, 1:00PM - 4:00PM </p></h3>
-			<h3>Where: <p></p></h3>
-			</br>
-            <p><a class="btn btn-primary btn-md"  href="event_more_info.html" >Learn more</a></p>
-			<p><a class="btn btn-primary btn-md">RSVP now</a></p>
+
+    <div class="container-fluid col-lg-4">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Edit Event</legend>
+          <div class="form-group">
+            <label for="inputFirstName" class="col-lg-2 control-label">Event Title</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="Come plant trees with RIT">
+            </div>
           </div>
-		  
-        </div>
-		</div>
-	</div>
+          <div class="form-group">
+            <label for="inputLastName" class="col-lg-2 control-label">About</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputLastName" placeholder="Come plant trees with RIT!">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Date and Time</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Wednesday, March 30th, 1:00PM - 4:00PM">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Where</label>
+            <div class="col-lg-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="RIT, 89 Lomb Memorial Drive, Rochester, NY 14623">
+            </div>
+          </div>
+		  </br>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="reset" class="btn btn-default">Cancel</button>
+              <a href="email_confirmation.html" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
   </body>
 </html>
