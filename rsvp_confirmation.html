@@ -3,7 +3,7 @@
   <head>
     <!-- ************************* COPY FROM HERE ************************* -->
     <!-- Change this title to whatever your page is -->
-    <title>EnvPortal - Create Event</title>
+    <title>EnvPortal - Confirm Event RSVP</title>
     <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
     <!-- ************************* TO HERE ************************* -->
   </head>
@@ -39,50 +39,24 @@
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
       <li><a href="home.html">Home</a></li>
-      <li class="active">Create Event</li>
+      <li><a href="find_events.html">Events</a></li>
+	  <li><a href="event_more_info.html">Come plant trees with RIT</a></li>
+      <li class="active">RSVP Confirmation</li>
     </ul>
     <!-- End Breadcrumbs -->
     <!-- ************************* TO HERE ************************* -->
-	
-	<!-- Input form for Creating Event -->
-	<div class="container-fluid col-lg-5">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Edit Event</legend>
-          <div class="form-group">
-            <label for="eventTitle" class="col-lg-3 control-label">Event Title</label>
-            <div class="col-lg-9">
-              <input type="text" class="form-control" id="eventTitle" placeholder="Event Title">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="about" class="col-lg-3 control-label">About</label>
-            <div class="col-lg-9">
-              <input type="text" class="form-control" id="about" placeholder="About">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="dateAndTime" class="col-lg-3 control-label">Date and Time</label>
-            <div class="col-lg-9">
-              <input type="text" class="form-control" id="dateAndTime" placeholder="Date and Time">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="location" class="col-lg-3 control-label">Location</label>
-            <div class="col-lg-9">
-              <input type="text" class="form-control" id="location" placeholder="Location">
-            </div>
-          </div>
-		  </br>
-          <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-3">
-              <button type="reset" class="btn btn-default">Cancel</button>
-              <a href="create_confirmation.html" class="btn btn-primary">Submit</a>
-            </div>
-          </div>
-        </fieldset>
-      </form>
+
+    <div class="container-fluid">
+      <h3>You have signed up to attend the event "Come plant trees with RIT!"</h3>
+
+      <p>We will send you an email reminder when the date draws near.</p>
+
+      <p>You can return to the event listings by clicking the "Okay" button below.</p>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-1">
+          <a href="calendar.html" class="btn btn-primary">Okay</a>
+        </div>
+      </div>
     </div>
-	
   </body>
 </html>
