@@ -11,8 +11,6 @@
       event reservation
 - create event
   - should redirect to a hard coded confirmation page once the event is created
-- edit event
-  - where is it?!?!?!?!?!?!
 
 HTA
 - find event
