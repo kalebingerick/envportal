@@ -1,7 +1,3 @@
-- resources
-  - page should link to a blank page first with just the option to search
-  - once the zip code is entered it should link to a page with the rest of the
-    resources
 - events
   - then can click come plant trees
   - the days with no events should not be links
