@@ -1,4 +1,4 @@
-"""envPortal URL Configuration
+"""uxexperience URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -15,9 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-import site.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^home/', site.views.home, name='home'),
 ]
