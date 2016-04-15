@@ -19,5 +19,5 @@ import envTest.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^home/', source.views.home, name='home'),
+	url(r'^home/', envTest.views.home, name='home'),
 ]
