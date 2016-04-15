@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ************************* COPY FROM HERE ************************* -->
+    <!-- Change this title to whatever your page is -->
+    <title>EnvPortal - Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+    <!-- ************************* TO HERE ************************* -->
+  </head>
+  <body>
+    <!-- ************************* COPY FROM HERE ************************* -->
+    <!-- This is the navigation bar. This should be on every page -->
+    <!-- If you change anything here BE SURE to copy it over to EVERY other page -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">EnvPortal</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="calendar.html">Find an Event</a></li>
+            <li><a href="find_resources.html">Find Resources</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="log_in.html">Log In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumbs: add your page to this list -->
+    <ul class="breadcrumb">
+      <li class="active">Home</li>
+    </ul>
+    <!-- End Breadcrumbs -->
+    <!-- ************************* TO HERE ************************* -->
+
+    <!-- Featured Events Jumbotron -->
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Featured Events</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Come plant trees with RIT!</p>
+            <p><a href="event_more_info.html" class="btn btn-primary btn-lg">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Featured Events Jumbotron -->
+
+    <!-- Begin Option Buttons -->
+    <!-- TODO make this dynamic - the descriptions move if the browser is smaller -->
+    <div class="container-fluid">
+      <div class="btn-group btn-group-justified">
+        <a href="find_resources.html" class="btn btn-info">Find Resources</a>
+        <a href="calendar.html" class="btn btn-success">Find Events</a>
+        <a href="create_event.html" class="btn btn-danger">Create an Event</a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="panel col-lg-4">
+        <div class="panel-body">
+          Don't know how to best help the environment? Follow this link to learn about resources in your area to learn and volunteer.
+        </div>
+      </div>
+      <div class="panel col-lg-4">
+        <div class="panel-body">
+          Click this link to find events designed to benefit the environment in your area.
+        </div>
+      </div>
+      <div class="panel col-lg-4">
+        <div class="panel-body">
+          Have an idea for an event you haven't seen on the site? Click here to create your own event! An account is required for this action, so you will be redirected to a login page if you are not already logged in.
+        </div>
+      </div>
+    </div>
+    <!-- End Option Buttons -->
+  </body>
+</html>
