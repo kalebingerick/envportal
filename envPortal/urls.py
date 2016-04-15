@@ -1,13 +1,5 @@
 from django.conf.urls import url
-<<<<<<< HEAD
 from django.contrib import admin
-import envTest.views
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-	url(r'^home/', envTest.views.home, name='home'),
-]
-=======
 from . import views
 
 #app_name = 'envportal'
@@ -21,4 +13,3 @@ urlpatterns = [
 	url(r'^log_in/$', views.log_in, name='log_in'),
 	url(r'^sign_up/$', views.sign_up, name='sign_up'),
 ]
->>>>>>> origin/django_fix
