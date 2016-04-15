@@ -1,1 +1,1 @@
-web: gunicorn envPortal.wsgi --log-file -
+web: gunicorn uxexperience.wsgi --log-file -
