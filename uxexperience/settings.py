@@ -37,11 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD:envPortal/settings.py
-	'envTest',
-=======
 	'envportal'
->>>>>>> origin/django_fix:uxexperience/settings.py
 ]
 
 MIDDLEWARE_CLASSES = [
