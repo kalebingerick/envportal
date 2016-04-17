@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- Change this title to whatever your page is -->
-    <title>EnvPortal - Edit Event - Come plant trees with RIT </title>
-    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
-    <!-- ************************* TO HERE ************************* -->
-  </head>
-  <body>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- This is the navigation bar. This should be on every page -->
-    <!-- If you change anything here BE SURE to copy it over to EVERY other page -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="home.html">EnvPortal</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="calendar.html">Find an Event</a></li>
-            <li><a href="find_resources.html">Find Resources</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="user_dashboard.html">My Profile</a></li>
-            <li><a href="home.html">Sign Out</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Breadcrumbs: add your page to this list -->
-    <ul class="breadcrumb">
-      <li><a href="home.html">Home</a></li>
-	  <li><a href="calendar.html">Events</a></li>
-      <li class="active">Edit Event</li>
-    </ul>
-    <!-- End Breadcrumbs -->
-    <!-- ************************* TO HERE ************************* -->
-
+{% extends "envportal/base.html" %}
+{% block title %} - Edit Events{% endblock %}
+{% block content %}
     <div class="container-fluid col-lg-5">
       <form class="form-horizontal">
         <fieldset>
@@ -85,4 +41,4 @@
     </div>
 
   </body>
-</html>
+  {% endblock %}
