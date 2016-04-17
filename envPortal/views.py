@@ -13,25 +13,14 @@ def calendar(request):
     return render(request, 'envportal/calendar.html')
 #enddef
 
+@login_required(login_url='log_in')
 def create_event(request):
-	if request.user.is_authenticated():
-		return render(request, 'envportal/create_event.html')
-	else:
-		need_auth(request)
-		return render(request, 'envportal/create_event.html')
+  return render(request, 'envportal/create_event.html')
 #enddef
 
+@login_required(login_url='log_in')
 def edit_event(request):
-	if request.user.is_authenticated():
-		return render(request, 'envportal/edit_events.html')
-	else:
-		need_auth(request)
-		return render(request, 'envportal/edit_events.html')
-
-def need_auth(request):
-	log_in(request)
-	return request
-#enddef
+  return render(request, 'envportal/edit_events.html')
 
 @login_required(login_url='log_in')
 def user_dashboard(request):
@@ -68,3 +57,4 @@ def sign_up(request):
 
 def email_confirmation(request):
     return render(request, 'envportal/email_confirmation.html')
+
