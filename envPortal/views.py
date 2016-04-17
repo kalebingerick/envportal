@@ -41,7 +41,6 @@ def log_in(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            print("Here")
             return HttpResponseRedirect('/user_dashboard')
     return render(request, 'envportal/log_in.html')
 #enddef
