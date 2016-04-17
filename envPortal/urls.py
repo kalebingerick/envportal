@@ -12,4 +12,6 @@ urlpatterns = [
 	url(r'^find_resources/$', views.find_resources, name='find_resources'),
 	url(r'^log_in/$', views.log_in, name='log_in'),
 	url(r'^sign_up/$', views.sign_up, name='sign_up'),
+	url(r'^user_dashboard/$', views.user_dashboard, name='user_dashboard'),
+	url(r'^edit_event/$', views.edit_event, name='edit_event'),
 ]
