@@ -47,7 +47,10 @@ def log_in(request):
 
 def sign_up(request):
     if request.method == "POST":
-        u = User.objects.get(username='john')
+        try:
+          u = User.objects.get(username='john')
+        except User.DoesNotExist:
+          u = None
         if u is None:
           u = User.objects.create_user('john', 'john.smith@gmail.com', 'password1234')
         return HttpResponseRedirect('/email_confirmation')
