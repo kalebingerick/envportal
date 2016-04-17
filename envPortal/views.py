@@ -1,4 +1,8 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request):
@@ -29,6 +33,7 @@ def need_auth(request):
 	return request
 #enddef
 
+@login_required(login_url='log_in')
 def user_dashboard(request):
 	return render(request, 'envportal/user_dashboard.html')
 	
@@ -41,9 +46,25 @@ def find_resources(request):
 #enddef
 
 def log_in(request):
+    if request.method == "POST":
+        username = 'john'
+        password = 'password1234'
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+            print("Here")
+            return HttpResponseRedirect('/user_dashboard')
     return render(request, 'envportal/log_in.html')
 #enddef
 
 def sign_up(request):
+    if request.method == "POST":
+        u = User.objects.get(username='john')
+        if u is None:
+          u = User.objects.create_user('john', 'john.smith@gmail.com', 'password1234')
+        return HttpResponseRedirect('/email_confirmation')
     return render(request, 'envportal/sign_up.html')
 #enddef
+
+def email_confirmation(request):
+    return render(request, 'envportal/email_confirmation.html')
