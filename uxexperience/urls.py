@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from envPortal import views
 
 urlpatterns = [
     #url(r'^admin/', admin.site.urls),
-	url(r'^envportal/', include('envPortal.urls'))
+    url(r'', include('envPortal.urls'))
 ]
