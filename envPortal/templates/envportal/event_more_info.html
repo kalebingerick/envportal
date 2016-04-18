@@ -1,50 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- Change this title to whatever your page is -->
-    <title>EnvPortal - Come plant trees with RIT</title>
-    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
-    <!-- ************************* TO HERE ************************* -->
-  </head>
-  <body>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- This is the navigation bar. This should be on every page -->
-    <!-- If you change anything here BE SURE to copy it over to EVERY other page -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="home.html">EnvPortal</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="calendar.html">Find an Event <span class="sr-only">(current)</span></a></li>
-            <li><a href="find_resources.html">Find Resources</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="log_in.html">Log In</a></li>
-            <li><a href="sign_up.html">Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Breadcrumbs: add your page to this list -->
-    <ul class="breadcrumb">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="calendar.html">Events</a></li>
-      <li class="active">Come plant trees with RIT</li>
-	  
-    </ul>
-    <!-- End Breadcrumbs -->
-    <!-- ************************* TO HERE ************************* -->
+{% extends 'envportal/base.html' %}
+{% block title %} - Come plant trees with RIT{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'calendar' %}">Events</a></li>
+<li class="active">Come plant trees with RIT</li>
+{% endblock %}
+{% block content %}
 	<div class="container-fluid">
 		<div class="event">
 		<h2>Come plant trees with RIT</h2>
@@ -53,12 +13,11 @@
 			<h3>About:<p>Come plant trees with RIT!</p></h3>            
 			<h3>When: <p>Wednesday, March 30th, 1:00PM - 4:00PM </p></h3>
 			<h3>Where: RIT, 89 Lomb Memorial Drive, Rochester, NY 14623 <p></p></h3>
-			</br>
-            <p><a class="btn btn-primary btn-md"  href="rsvp_confirmation.html" >RSVP Now</a></p>
+	          <br/>
+            <p><a class="btn btn-primary btn-md"  href="{% url 'rsvp_confirmation' %}" >RSVP Now</a></p>
           </div>
 		  
         </div>
 		</div>
 	</div>
-  </body>
-</html>
+{% endblock %}
