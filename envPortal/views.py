@@ -34,6 +34,14 @@ def find_resources(request):
     return render(request, 'envportal/find_resources.html')
 #enddef
 
+def find_resources_search(request):
+    return render(request, 'envportal/find_resources_search.html')
+#enddef
+
+def about(request):
+    return render(request, 'envportal/about.html')
+#enddef
+
 def log_in(request):
     if request.method == "POST":
         username = 'john'
