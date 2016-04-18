@@ -1,48 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- Change this title to whatever your page is -->
-    <title>EnvPortal - Calendar</title>
-    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
-    <!-- ************************* TO HERE ************************* -->
-  </head>
-  <body>
-    <!-- ************************* COPY FROM HERE ************************* -->
-    <!-- This is the navigation bar. This should be on every page -->
-    <!-- If you change anything here BE SURE to copy it over to EVERY other page -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="home.html">EnvPortal</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="calendar.html">Find an Event <span class="sr-only">(current)</span></a></li>
-            <li><a href="find_resources.html">Find Resources</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="log_in.html">Log In</a></li>
-            <li><a href="sign_up.html">Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Breadcrumbs: add your page to this list -->
-    <ul class="breadcrumb">
-      <li><a href="home.html">Home</a></li>
-      <li class="active">Events</li>
-    </ul>
-    <!-- End Breadcrumbs -->
-    <!-- ************************* TO HERE ************************* -->
+{% extends 'envportal/base.html' %}
+{% block title %} - Calendar {% endblock %}
+{% block breadcrumbs %}<li class="active">Events</li>{% endblock %}
+{% block content %}
 	<div class="container-fluid">
 	<div class="panel panel-primary">
 	<div class="panel-heading">
@@ -78,7 +37,7 @@
 					<div class="col-lg-1"><p>6</p></div>
 					<div class="col-lg-1"><p>7</p></div>
 					<div class="col-lg-1"><p>8</p></div>
-          <div class="col-lg-1"><a href="event_more_info.html"><p>9</p></a></div>
+          <div class="col-lg-1"><a href="{% url 'event_more_info' %}"><p>9</p></a></div>
 					<div class="col-lg-1"><p>10</p></div>
 					<div class="col-lg-1"><p>11</p></div>
 					<div class="col-lg-1"><p>12</p></div>
@@ -87,7 +46,7 @@
 				<div class="row dates">
 					<div class="col-lg-1"><p>13</p></div>
 					<div class="col-lg-1"><p>14</p></div>
-          <div class="col-lg-1"><a href="event_more_info.html"><p>15</p></a></div>
+          <div class="col-lg-1"><a href="{% url 'event_more_info' %}"><p>15</p></a></div>
 					<div class="col-lg-1"><p>16</p></div>
 					<div class="col-lg-1"><p>17</p></div>
 					<div class="col-lg-1"><p>18</p></div>
@@ -108,7 +67,7 @@
 					<div class="col-lg-1"><p>27</p></div>
 					<div class="col-lg-1"><p>28</p></div>
 					<div class="col-lg-1"><p>29</p></div>
-					<div class="col-lg-1"><a href="event_more_info.html"><p>30</p></a></div>
+					<div class="col-lg-1"><a href="{% url 'event_more_info' %}"><p>30</p></a></div>
 					<div class="col-lg-1"><p>31</p></div>
 					<div class="col-lg-1"><p>1</p></div>
 					<div class="col-lg-1"><p>2</p></div>
@@ -120,6 +79,4 @@
 		</div>
 	</div>
 	</div>
-	</div>
-  </body>
-</html>
+{% endblock %}
