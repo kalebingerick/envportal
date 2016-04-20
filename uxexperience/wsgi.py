@@ -12,6 +12,7 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "uxexperience.settings")
 
+application = get_wsgi_application()
 try: from whitenoise.django import DjangoWhiteNoise
-except ImportError: application = get_wsgi_application()
+except ImportError: pass
 else: application = DjangoWhiteNoise(application)
