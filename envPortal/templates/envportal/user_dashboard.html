@@ -5,7 +5,7 @@
 		<form class="form-horizontal">
 			<fieldset>
 				<legend>My Events</legend>
-
+				<button href="{% url 'create_event' %}" class="btn btn-default">Create Event</button>
 				<!-- Container for My Events -->
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#created" data-toggle="tab" aria-expanded="true">Created</a></li>
@@ -16,7 +16,7 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">Come Plant Trees With RIT!</div>
 							<div class="panel-body">
-								<label for="timeDateLoc" class="col-lg-4 control-label">Time: ~~~	Date: ~~~	Location: ~~~</label>
+								<label for="timeDateLoc" class="col-lg-4 control-label">Time: 1:00PM - 4:00PM  Date: Wednesday, March 30th Location: RIT, 89 Lomb Memorial Drive, Rochester, NY 14623</label>
 								<div class="col-rg-4 col-rg-offset-4">
 									<a href="edit_events.html" class="btn btn-primary">Edit Event</a>
 								</div>
@@ -27,9 +27,9 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">Come Plant Trees With RIT!</div>
 							<div class="panel-body">
-								<label for="timeDateLoc" class="col-lg-4 control-label">Time: ~~~	Date: ~~~	Location: ~~~</label>
+								<label for="timeDateLoc" class="col-lg-4 control-label">Time: 1:00PM - 4:00PM /n Date: Wednesday, March 30th	/n Location: RIT, 89 Lomb Memorial Drive, Rochester, NY 14623</label>
 								<div class="col-rg-4 col-rg-offset-4">
-									<a href="event_more_info.html" class="btn btn-primary">Learn More</a>
+									<a href="{% url 'event_more_info' %}" class="btn btn-primary">Learn More</a>
 								</div>
 							</div>
 						</div>

@@ -69,6 +69,11 @@ def sign_up(request):
     return render(request, 'envportal/sign_up.html')
 #enddef
 
+@login_required
+def confirmation_create_event(request):
+	return render(request, 'envportal/create_confirmation.html')
+#enddef
+
 def email_confirmation(request):
     return render(request, 'envportal/email_confirmation.html')
 
