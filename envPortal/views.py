@@ -42,6 +42,10 @@ def about(request):
     return render(request, 'envportal/about.html')
 #enddef
 
+def attending(request):
+    return render(request, 'envportal/attending.html')
+#enddef
+
 def rsvp_confirmation(request):
     return render(request, 'envportal/rsvp_confirmation.html')
 #enddef
