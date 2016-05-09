@@ -24,4 +24,11 @@ urlpatterns = [
   url(r'^events/trash_pickup/$', TemplateView.as_view(template_name='envportal/events/trash_pickup.html'), name="trash_pickup"),
   url(r'^events/tree_planting/$', TemplateView.as_view(template_name='envportal/events/tree_planting.html'), name="tree_planting"),
   url(r'^events/volunteer/$', TemplateView.as_view(template_name='envportal/events/volunteer.html'), name="volunteer"),
+  url(r'^resources/green_earth/$', TemplateView.as_view(template_name='envportal/resources/green_earth.html'), name="green_earth"),
+  url(r'^resources/trash_into_treasure/$', TemplateView.as_view(template_name='envportal/resources/trash_into_treasure.html'), name="trash_into_treasure"),
+  url(r'^resources/better_than_dirt/$', TemplateView.as_view(template_name='envportal/resources/better_than_dirt.html'), name="better_than_dirt"),
+  url(r'^resources/can_collection/$', TemplateView.as_view(template_name='envportal/resources/can_collection.html'), name="can_collection"),
+  url(r'^resources/timber/$', TemplateView.as_view(template_name='envportal/resources/timber.html'), name="timber"),
+  url(r'^resources/jeans_and_jackets/$', TemplateView.as_view(template_name='envportal/resources/jeans_and_jackets.html'), name="jeans_and_jackets"),
+  url(r'^resources/volunteer_center/$', TemplateView.as_view(template_name='envportal/resources/volunteer_center.html'), name="volunteer_center"),
 ]

@@ -1,0 +1,21 @@
+
+{% extends 'envportal/base.html' %}
+{% load static %}
+{% block title %} - Rochester Can Collection Center{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'find_resources' %}">Resources</a></li>
+<li class="active">Rochester Can Collection Center</li>
+{% endblock %}
+{% block content %}
+	<div class="container-fluid">
+		<div class="event">
+      <h2>Rochester Can Collection Center</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Address: <p>2244 Shiny Things Lane</p></h3>            
+          <h3><img src="{% static 'envportal/img/map.png' %}"/></h3>
+        </div>
+      </div>
+		</div>
+	</div>
+{% endblock %}
