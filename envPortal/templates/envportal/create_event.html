@@ -21,7 +21,20 @@
           <div class="form-group">
             <label for="dateAndTime" class="col-lg-3 control-label">Date and Time</label>
             <div class="col-lg-9">
-              <input type="text" class="form-control" id="dateAndTime" placeholder="Date and Time">
+				<select  class="form-control" id="dateAndTime">
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
             </div>
           </div>
           <div class="form-group">
@@ -34,7 +47,7 @@
           <div class="form-group">
             <div class="col-lg-10 col-lg-offset-3">
               <button type="reset" class="btn btn-default">Cancel</button>
-              <a href="{% url 'confirmation_create_event' %}" class="btn btn-primary">Submit</a>
+              <a href="{% url 'user_dashboard' %}" class="btn btn-primary">Submit</a>
             </div>
           </div>
         </fieldset>
