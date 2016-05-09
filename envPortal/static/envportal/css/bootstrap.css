@@ -3195,7 +3195,7 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success:hover {
   color: #ffffff;
   background-color: #1a873a;
-  border-color: #187f36;
+  border-color: #1a873a;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3252,7 +3252,7 @@ fieldset[disabled] .btn-success.focus {
 .btn-info:hover {
   color: #ffffff;
   background-color: #80716a;
-  border-color: #24476b;
+  border-color: #80716a;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3366,7 +3366,7 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger:hover {
   color: #ffffff;
   background-color: #66777d;
-  border-color: #b85c00;
+  border-color: #66777d;
 }
 .btn-danger:active,
 .btn-danger.active,
