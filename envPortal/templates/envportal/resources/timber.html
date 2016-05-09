@@ -1,0 +1,21 @@
+
+{% extends 'envportal/base.html' %}
+{% load static %}
+{% block title %} - Timber!{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'find_resources' %}">Resources</a></li>
+<li class="active">Timber!</li>
+{% endblock %}
+{% block content %}
+	<div class="container-fluid">
+		<div class="event">
+      <h2>Timber!</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Address: <p>337 Tin Man Avenue</p></h3>            
+          <h3><img src="{% static 'envportal/img/map.png' %}"/></h3>
+        </div>
+      </div>
+		</div>
+	</div>
+{% endblock %}
