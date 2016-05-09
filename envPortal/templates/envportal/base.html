@@ -4,6 +4,49 @@
   <head>
     <title>EnvPortal{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'envportal/css/bootstrap.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'fullcalendar/fullcalendar.css' %}"/>
+    <script src="{% static 'fullcalendar/lib/jquery.min.js' %}"></script>
+    <script src="{% static 'fullcalendar/lib/moment.min.js' %}"></script>
+    <script src="{% static 'fullcalendar/fullcalendar.js' %}"></script>
+    <script>
+      $(document).ready(function() {
+        $('#calendar').fullCalendar({
+          aspectRatio: 2,
+          events: [
+            {
+              title: "Trash Pickup",
+              start: "2016-05-05T12:30:00",
+              allDay: false,
+              url: "{% url 'trash_pickup' %}"
+            },
+            {
+              title: "Lobby Oil Bill Change",
+              start: "2016-05-17T08:30:00",
+              allDay: false,
+              url: "{% url 'oil_bill' %}"
+            },
+            {
+              title: "Volunteer at Rochester Volunteer Center",
+              start: "2016-05-14T09:00:00",
+              allDay: false,
+              url: "{% url 'volunteer' %}"
+            },
+            {
+              title: "Tree Planting",
+              start: "2016-05-30T13:00:00",
+              allDay: false,
+              url: "{% url 'tree_planting' %}"
+            }
+            ],
+            eventClick: function(event) {
+              if (event.url) {
+                window.open(event.url,_self);
+                return false;
+              }
+            }
+        })
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-default">
