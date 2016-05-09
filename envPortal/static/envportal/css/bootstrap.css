@@ -3194,8 +3194,8 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success:hover {
   color: #ffffff;
-  background-color: #80716a;
-  border-color: #80716a;
+  background-color: #bf9076;
+  border-color: #bf9076;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3251,8 +3251,8 @@ fieldset[disabled] .btn-success.focus {
 }
 .btn-info:hover {
   color: #ffffff;
-  background-color: #bf9076;
-  border-color: #bf9076;
+  background-color: #66777d;
+  border-color: #66777d;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3365,8 +3365,8 @@ fieldset[disabled] .btn-warning.focus {
 }
 .btn-danger:hover {
   color: #ffffff;
-  background-color: #66777d;
-  border-color: #66777d;
+  background-color: #80716a;
+  border-color: #80716a;
 }
 .btn-danger:active,
 .btn-danger.active,
