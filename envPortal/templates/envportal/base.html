@@ -78,7 +78,11 @@
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
 		{% block breadcrumbs %}
-			{% breadcrumb "Home" "home" %}
+			{% clear_breadcrumbs %}
+			{% breadcrumb "Home" "/" %}
+		{% endblock %}
+		{% block content %}
+			{% render_breadcrumbs %}
 		{% endblock %}
     </ul>
   <!-- End Breadcrumbs -->
