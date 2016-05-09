@@ -77,8 +77,9 @@
 
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
-		<li href="{% url 'home' %}">Home</li>
-		{% block breadcrumbs %}{% endblock %}
+		{% block breadcrumbs %}
+			{% breadcrumb "Home" "{% url 'home' %}" %}
+		{% endblock %}
     </ul>
   <!-- End Breadcrumbs -->
 
