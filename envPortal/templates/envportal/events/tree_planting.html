@@ -1,0 +1,23 @@
+{% extends 'envportal/base.html' %}
+{% block title %} - Come plant trees with RIT{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'calendar' %}">Events</a></li>
+<li class="active">Come plant trees with RIT</li>
+{% endblock %}
+{% block content %}
+	<div class="container-fluid">
+		<div class="event">
+		<h2>Tree Planting</h2>
+        <div class="row">
+          <div class="col-md-4">
+			<h3>About:<p>Come plant trees with RIT!</p></h3>            
+			<h3>When: <p>Monday, May 30th, 1:00PM - 4:00PM </p></h3>
+			<h3>Where: <p>RIT</p></h3>
+	          <br/>
+            <p><a class="btn btn-primary btn-md"  href="{% url 'rsvp_confirmation' %}" >RSVP Now</a></p>
+          </div>
+		  
+        </div>
+		</div>
+	</div>
+{% endblock %}

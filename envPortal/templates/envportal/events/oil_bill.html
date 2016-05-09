@@ -1,0 +1,23 @@
+{% extends 'envportal/base.html' %}
+{% block title %} - Lobby Oil Bill{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'calendar' %}">Events</a></li>
+<li class="active">Lobby Oil Bill</li>
+{% endblock %}
+{% block content %}
+	<div class="container-fluid">
+		<div class="event">
+		<h2>Lobby Oil Bill</h2>
+        <div class="row">
+          <div class="col-md-4">
+			<h3>About:<p>Lobby against the proposed oil bill</p></h3>            
+			<h3>When: <p>Tuesday, May 17th, 8:30 AM </p></h3>
+			<h3>Where: <p>City Hall</p></h3>
+	          <br/>
+            <p><a class="btn btn-primary btn-md"  href="{% url 'rsvp_confirmation' %}" >RSVP Now</a></p>
+          </div>
+		  
+        </div>
+		</div>
+	</div>
+{% endblock %}

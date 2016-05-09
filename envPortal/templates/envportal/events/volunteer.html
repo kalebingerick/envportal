@@ -1,0 +1,23 @@
+{% extends 'envportal/base.html' %}
+{% block title %} - Volunteer Work{% endblock %}
+{% block breadcrumbs %}
+<li><a href="{% url 'calendar' %}">Events</a></li>
+<li class="active">Volunteer Work</li>
+{% endblock %}
+{% block content %}
+	<div class="container-fluid">
+		<div class="event">
+		<h2>Volunteer Work</h2>
+        <div class="row">
+          <div class="col-md-4">
+			<h3>About:<p>Volunteer at Rochester Volunteer Center</p></h3>            
+			<h3>When: <p>Saturday, May 14th, 9:00AM </p></h3>
+			<h3>Where: <p>Rochester Volunteer Center</p></h3>
+	          <br/>
+            <p><a class="btn btn-primary btn-md"  href="{% url 'rsvp_confirmation' %}" >RSVP Now</a></p>
+          </div>
+		  
+        </div>
+		</div>
+	</div>
+{% endblock %}
