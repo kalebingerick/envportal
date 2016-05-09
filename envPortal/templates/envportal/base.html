@@ -77,11 +77,7 @@
 
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
-		{%if !{%url 'home'}}
-			<li class="active">Home</li>
-		{%else}
-			<li>Home</li>
-        {% block breadcrumbs %}{% endblock %}
+		{% block breadcrumbs %}{% endblock %}
     </ul>
   <!-- End Breadcrumbs -->
 
