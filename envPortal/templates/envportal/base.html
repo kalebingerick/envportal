@@ -75,7 +75,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{% url 'log_in' %}">Log In</a></li>
-            <li><a href="{% url 'sign_up' %}">Sign Up</a></li>
+            <li><a href="{% url 'sign_up' %}">Register</a></li>
           </ul>
         </div>
       </div>
@@ -83,7 +83,7 @@
 
     <!-- Breadcrumbs: add your page to this list -->
     <ul class="breadcrumb">
-		<li class="active"> Home </li>
+      <li class="active"><a href="{% url 'home' %}">Home</a></li>
 		{% block breadcrumbs %}{% endblock %}
 
     </ul>
