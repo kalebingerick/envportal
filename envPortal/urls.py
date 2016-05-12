@@ -19,7 +19,6 @@ urlpatterns = [
     url(r'^user_dashboard$', views.user_dashboard, name='user_dashboard'),
     url(r'^edit_event$', views.edit_event, name='edit_event'),
     url(r'^email_confirmation$', views.email_confirmation, name='email_confirmation'),
-  url(r'^user_dashboard_edited/$', TemplateView.as_view(template_name='envportal/user_dashboard_edited.html'), name="user_dashboard_edited"),
 	url(r'^rsvp_confirmation$', views.rsvp_confirmation, name='rsvp_confirmation'),
   url(r'^events/oil_bill/$', TemplateView.as_view(template_name='envportal/events/oil_bill.html'), name="oil_bill"),
   url(r'^events/trash_pickup/$', TemplateView.as_view(template_name='envportal/events/trash_pickup.html'), name="trash_pickup"),
