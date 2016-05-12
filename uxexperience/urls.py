@@ -21,3 +21,7 @@ urlpatterns = [
     #url(r'^admin/', admin.site.urls),
     url(r'', include('envPortal.urls'))
 ]
+
+urlpatterns += patterns('',
+    (r'^static/(?P.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+)
