@@ -1,4 +1,4 @@
-Django==1.9.5
+Django==2.2.24
 virtualenv==15.0.1
 dj-database-url==0.4.0
 gunicorn==19.4.5
